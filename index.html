@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>WebWave Company</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="landing-page">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Welcome to WebWave Company</h1>
+                    <p>Empowering Your Online Presence with Reliable and Affordable Hosting Solutions</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="hero-image">
+                    <img src="2024-06-11 (1).png" alt="Hero Image"> <!-- Placeholder image -->
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+            <h2>WebWave Pricing Plans</h2>
+            <div class="pricing-options">
+                <div class="pricing-option">
+                    <h3>Basic Plan</h3>
+                    <p class="price">$10<span>/month</span></p>
+                    <ul>
+                        <li>5GB Storage</li>
+                        <li>20GB Monthly Bandwidth</li>
+                        <li>50 Google Adwords</li>
+                        <li>50 Domain Hosting</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+                <div class="pricing-option">
+                    <h3>Standard Plan</h3>
+                    <p class="price">$20<span>/month</span></p>
+                    <ul>
+                        <li>5GB Storage</li>
+                        <li>20GB Monthly Bandwidth</li>
+                        <li>50 Google Adwords</li>
+                        <li>50 Domain Hosting</li>
+                        <li>SSL Shoping Cart</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+                <div class="pricing-option">
+                    <h3>Premium Plan</h3>
+                    <p class="price">$30<span>/month</span></p>
+                    <ul>
+                        <li>5GB Storage</li>
+                        <li>20GB Monthly Bandwidth</li>
+                        <li>50 Google Adwords</li>
+                        <li>50 Domain Hosting</li>
+                        <li>SSL Shoping Cart</li>
+                        <li>24/7 Support Live</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Empowering Your Online Presence with Reliable and Affordable Hosting Solutions"</p>
+                <h4>- Pavs</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Exceptional quality and fantastic customer support. Five stars!"</p>
+                <h4>- Rithwik chahal</h4>
+            </div>
+            <div class="testimonial">
+                <p>"The customer support at WebWave Hosting is outstanding! They are always available to help with any issues, making the whole experience seamless and stress-free."</p>
+                <h4>- Samsun</h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.pricing-option button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert(`You have selected the ${this.parentElement.querySelector('h3').innerText} plan`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
